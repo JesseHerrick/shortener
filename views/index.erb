@@ -11,12 +11,18 @@
         <h1 class="centered"><a href="/">jes.se</a></h1>
         <form method="post">
             <input type="text" value="<%= h(params[:url]) %>" placeholder="www.jessegrant.net" name="url" id="url" />
-            <input type="submit" value="Shorten!" id="submit" />
+            <button type="submit" id="submit">Shorten!</button>
         </form>
         <% if @code %>
         <div>
             Your short code is:
             <a href="/<%= @code %>"><%= @code %></a>
+        </div>
+        <% end %>
+
+        <% if @error %>
+        <div>
+            <p><%= @error %></p>
         </div>
         <% end %>
     </div>
