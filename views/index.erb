@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Shortlink App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>  
+    <div class="container">  
+        <h1>shortlink app</h1>  
+        <form method="post">  
+            <input type="text" value="<%= h(params[:url]) %>" name="url" id="url" />  
+            <input type="submit" value="shorten" id="submit" />  
+        </form>  
+        <div class="clear"></div>  
+        <% if @code %>  
+        <div class="result">  
+            Your short code is:  
+            <a href="/<%= @code %>"><%= @code %></a>
+        </div>  
+        <% end %>  
+    </div>  
+</body>
