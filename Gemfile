@@ -3,3 +3,5 @@ ruby "2.0.0"
 
 gem 'sinatra'
 gem 'redis'
+gem 'rerun'
+gem 'foreman'
