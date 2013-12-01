@@ -1,9 +1,10 @@
 require 'sinatra'
 require 'redis'
 require 'digest/md5'
+require 'sinatra/activerecord'
+require './config/environments'
 
 set :environment, :production
-db = Redis.new
 
 helpers do
 	include Rack::Utils  
