@@ -1,2 +1,2 @@
-require './app'
+require './shortener.rb'
 require 'sinatra/activerecord/rake'

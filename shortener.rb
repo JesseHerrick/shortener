@@ -1,8 +1,8 @@
 require 'sinatra'
-require 'redis'
 require 'digest/md5'
 require 'sinatra/activerecord'
 require './config/environments'
+require './models/model'
 
 set :environment, :production
 
